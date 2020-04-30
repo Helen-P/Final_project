@@ -1,0 +1,15 @@
+$main_font-family: "Poppins", sans-serif;
+
+$light_grey: #a4adc8;
+$middle_grey: #666c71;
+$dark_blue: #0b1945;
+$blue: #264cda;
+$red: #eb2527;
+$blue_grey: #6a8c93;
+
+
+$padding_general: 34px;
+$red_backg_gradient: linear-gradient(to top left, #ff001d, #ff7c85);
+
+@media screen and (max-width: 1000px) {$padding_general: 10px;}
+

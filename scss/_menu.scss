@@ -1,0 +1,135 @@
+menu {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #ffffff;
+    padding: 0.4em;
+    box-shadow: 3px 0px 10px 2px rgba(228, 228, 228, 0.3);
+}
+
+.avatar {
+    margin: 0 auto;
+    padding-top: 40px;
+    position: relative;
+    word-break: break-all;
+
+    .wrapper_img {
+        border-radius: 100%;
+        width: 110px;
+        height: 110px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0px 23px 21px 10px rgba(241, 241, 241, 0.6);
+
+        img {
+            height: 100%;
+            width: auto;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .wrapper_img::before {
+        position: absolute;
+        content: "pro";
+        border-radius: 50px;
+        font-size: 9px;
+        letter-spacing: 2px;
+        padding: 2px;
+        text-transform: uppercase;
+        width: 35px;
+        height: 11px;
+        background: $red_backg_gradient;
+        right: 10px;
+        text-align: center;
+        top: 55px;
+        color: white;
+    }
+
+    .user_data {
+        text-align: center;
+        padding-top: 10px;
+        .user_name {
+            font-size: 0.9em;
+            color: $dark_blue;
+            font-weight: 600;
+        }
+
+        .user_mail {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: #838a9f;
+        }
+    }
+}
+
+.menu_items {
+    color: $light_grey;
+    font-size: 0.7em;
+    padding-left: 26px;
+    word-break: keep-all;
+
+    li {
+        padding-top: 10px;
+        font-weight: 500;
+        color: $light_grey;
+        font-size: 16px;
+        list-style: none;
+        text-decoration: none;
+
+        input {
+            display: none;
+        }
+
+        input:checked label {
+            color: lightcoral;
+        }
+
+        a {
+            outline: none;
+            border: 0;
+            text-decoration: none;
+
+            label {
+                color: $dark_blue;
+                font-size: 1rem;
+                font-weight: 400;
+
+                span {
+                    font-size: 1.3rem;
+                    transform: translateY(12%);
+                    display: inline-block;
+                    font-weight: 500;
+                    padding-right: 20px;
+                    color: $light_grey;
+                }
+            }
+        }
+
+        input:checked + a {
+            color: $blue;
+            font-weight: 600;
+        }
+
+        label:hover {
+            color: #264cda;
+            font-weight: 600;
+            cursor: pointer;
+
+            span {
+                color: inherit;
+                font-weight: inherit;
+            }
+        }
+    }
+}
+
+.title_menu {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $light_grey;
+    padding-bottom: 20px;
+    display: block;
+}

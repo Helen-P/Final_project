@@ -1,0 +1,218 @@
+{
+  "Albums": [
+    {
+      "id": 1,
+      "singer_id": 3,
+      "album_name": "Treat Myself",
+      "album_img": "../audio/Meghan_Trainor/folder.jpg",
+      "year": "2020"
+    },
+    {
+      "id": 2,
+      "singer_id": 2,
+      "album_name": "Deep Cuts",
+      "album_img": "../audio/Madonna/folder.jpg",
+      "year": "2019"
+    },
+    {
+      "id": 3,
+      "singer_id": 1,
+      "album_name": " Origins (Deluxe Edition)",
+      "album_img": "../audio/Imagine_Dragons/folder.jpg",
+      "year": "2018"
+    },
+    {
+      "id": 4,
+      "singer_id": 4,
+      "album_name": "Greatest Hits In Japan 2020",
+      "album_img": "../audio/Queen/folder.jpg",
+      "year": "2020"
+    },
+    {
+      "id": 5,
+      "singer_id": 5,
+      "album_name": "The Beatles",
+      "album_img": "../audio/The_Beatles/folder.jpg",
+      "year": "2019"
+    },
+    {
+      "id": 6,
+      "singer_id": 6,
+      "album_name": "Don’t Smile at Me",
+      "album_img": "../audio/Billie_Eilish/folder.jpg",
+      "year": "2020"
+    }
+  ],
+  "Singers": [
+    {
+      "id": 1,
+      "singer_name": "Imagine Dragons"
+    },
+    {
+      "id": 2,
+      "singer_name": "Madonna"
+    },
+    {
+      "id": 3,
+      "singer_name": "Meghan Trainor"
+    },
+    {
+      "id": 4,
+      "singer_name": "Queen"
+    },
+    {
+      "id": 5,
+      "singer_name": "The Beatles"
+    },
+    {
+      "id": 6,
+      "singer_name": "Billie Eilish"
+    }
+  ],
+  "Songs": [
+    {
+      "id": 1,
+      "album_id": 3,
+      "audio_src": "../audio/Imagine_Dragons/01.mp3",
+      "audio_name": "Natural",
+      "like": true,
+      "duration": "3:09"
+    },
+    {
+      "id": 2,
+      "album_id": 3,
+      "audio_src": "../audio/Imagine_Dragons/02.mp3",
+      "audio_name": "Boomerang",
+      "like": false,
+      "duration": "3:07"
+    },
+    {
+      "id": 3,
+      "album_id": 3,
+      "audio_src": "../audio/Imagine_Dragons/03.mp3",
+      "audio_name": "Machine",
+      "like": false,
+      "duration": "3:01"
+    },
+    {
+      "id": 17,
+      "album_id": 2,
+      "audio_src": "../audio/Madonna/01.mp3",
+      "audio_name": "Sgt.Pepper's Lonely Hearts Club Band",
+      "like": false,
+      "duration": "5:09"
+    },
+    {
+      "id": 18,
+      "album_id": 2,
+      "audio_src": "../audio/Madonna/02.mp3",
+      "audio_name": "Impressive Instant",
+      "like": false,
+      "duration": " 3:38"
+    },
+    {
+      "id": 42,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/01.mp3",
+      "audio_name": "Wave",
+      "like": false,
+      "duration": "2:57"
+    },
+    {
+      "id": 43,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/02.mp3",
+      "audio_name": "Nice To Meet Ya",
+      "like": true,
+      "duration": "3:17"
+    },
+    {
+      "id": 44,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/03.mp3",
+      "audio_name": "Funk",
+      "like": false,
+      "duration": "3:12"
+    },
+    {
+      "id": 45,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/04.mp3",
+      "audio_name": "Babygirl",
+      "like": false,
+      "duration": "3:20"
+    },
+    {
+      "id": 46,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/05.mp3",
+      "audio_name": "Workin' On It",
+      "like": false,
+      "duration": "3:01"
+    },
+    {
+      "id": 47,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/06.mp3",
+      "audio_name": "Ashes",
+      "like": false,
+      "duration": "3:18"
+    },
+    {
+      "id": 48,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/07.mp3",
+      "audio_name": "Lie To Me",
+      "like": false,
+      "duration": "2:40"
+    },
+    {
+      "id": 49,
+      "album_id": 1,
+      "audio_src": "../audio/Meghan_Trainor/08.mp3",
+      "audio_name": "Here To Stay",
+      "like": false,
+      "duration": "3:04"
+    },
+    {
+      "id": 51,
+      "album_id": 4,
+      "audio_src": "../audio/Queen/01.mp3",
+      "audio_name": "Somebody To Love",
+      "like": false,
+      "duration": "4:58"
+    },
+    {
+      "id": 63,
+      "album_id": 5,
+      "audio_src": "../audio/The_Beatles/01.mp3",
+      "audio_name": "Lonely Hearts Club Band",
+      "like": false,
+      "duration": "2:03"
+    },
+    {
+      "id": 65,
+      "album_id": 6,
+      "audio_src": "../audio/Billie_Eilish/01.mp3",
+      "audio_name": "Bellyache",
+      "like": false,
+      "duration": "2:03"
+    },
+    {
+      "id": 66,
+      "album_id": 6,
+      "audio_src": "../audio/Billie_Eilish/02.mp3",
+      "audio_name": "Come Out And Play",
+      "like": false,
+      "duration": "2:23"
+    },
+    {
+      "id": 67,
+      "album_id": 6,
+      "audio_src": "../audio/Billie_Eilish/03.mp3",
+      "audio_name": "Copycat",
+      "like": false,
+      "duration": "2:10"
+    }
+  ]
+}

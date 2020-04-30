@@ -1,0 +1,229 @@
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: auto;
+
+        .menu_container {
+            .menu_burger {
+                position: absolute;
+                display: block;
+                z-index: 28;
+                animation: hover 0.2s linear;
+            }
+            menu {
+                display: none;
+                z-index: 25;
+                width: 80vw;
+                box-shadow: 10px 0px 10px 5px rgba(228, 228, 228, 0.8);
+
+                .menu_items {
+                    padding-left: 10vw;
+
+                    li {
+                        padding-top: 10px;
+                        font-weight: 500;
+                        color: $light_grey;
+                        font-size: 1.2em;
+                        list-style: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        main {
+            padding: 4px 15px;
+        }
+
+        main {
+            header {
+                padding-right: 0;
+                display: flex;
+                justify-content: space-between;
+                .input_search_music {
+                    transform: translateX(20%);
+                    input {
+                        outline: none;
+                        background-color: transparent;
+                        padding: 7px;
+                        padding-left: 3rem;
+                        border-radius: 100px;
+                        border: 1px solid $blue_grey;
+                        font-size: 0.7em;
+                        width: 0rem;
+                        opacity: 0;
+                    }
+
+                    label {
+                        margin-left: 30px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-47%) scale(0.7);
+                        left: 22px;
+                        opacity: 0.7;
+                    }
+                }
+
+                .input_search_music input:focus {
+                    padding-left: 3rem;
+                    border-radius: 100px;
+                    border: 1px solid $blue_grey;
+                    opacity: 0.3;
+                    width: 25rem;
+                    transition: 0.6s;
+                }
+
+                .headers_icons {
+                    transform: scale(0.7);
+                }
+
+                .button_upgrade {
+                    display: none;
+                }
+            }
+            section .TOPchart {
+                display: grid;
+                grid-template-rows: 0.4fr;
+
+                .nav_arrows {
+                    padding-right: 0px;
+                }
+
+                .chart_container {
+                    .album {
+                        margin-right: 11px;
+                        padding-bottom: 10px;
+                        .album_img {
+                            border-radius: 10px;
+                            height: 110px;
+                            width: 100%;
+                            display: block;
+                            box-sizing: border-box;
+                            overflow: hidden;
+                            margin: 7px auto;
+
+                            .album_title {
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section + .popular_and_playing {
+                display: grid;
+                grid-template-columns: 1fr;
+
+                .Most_popular {
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                    .song_container {
+                        display: grid;
+                        grid-template-columns: 0.7fr 1fr 0.6fr 5fr 4fr 2fr 1fr;
+                        align-items: center;
+                    }
+                }
+
+                .Now_Playing {
+                    position: fixed;
+                    top: auto;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    z-index: 1;
+                    padding: 0;
+
+                    .title {
+                        display: none;
+                    }
+
+                    .player_container {
+                        box-shadow: 0px -5px 5px -1px rgba(214, 214, 214, 0.1);
+                        display: none;
+                        display: flex;
+                        justify-content: space-between;
+                        border-radius: 0px;
+                        grid-template-columns: 1fr;
+                        margin-top: 0 auto;
+                        min-width: 100%;
+                        min-height: 40%;
+
+                        .disk {
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            padding: 3px 15px;
+                            width: 60%;
+                            margin: auto;
+
+                            .disk_container {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 10px;
+                                margin: 0px 10px 0px 0px;
+                            }
+
+                            .disk_container:before {
+                                width: 10px;
+                                height: 10px;
+                            }
+
+                            .song_progress {
+                                font-size: 12px;
+                                padding-bottom: 0px;
+                                width: 300px;
+                            }
+                        }
+
+                        .information {
+                            padding-top: 2px;
+                            padding-right: 2px;
+                            margin-left: 0;
+                            width: 40%;
+
+                            span {
+                                display: inline-block;
+                                font-size: 14px;
+                            }
+                            button {
+                                border: none;
+                                outline: none;
+                                background: none;
+                                cursor: pointer;
+                            }
+
+                            .settings {
+                                padding-top: 0px;
+                                display: flex;
+                                justify-content: space-between;
+                                width: 180px;
+
+                                .play_pause {
+                                    font-size: 24px;
+                                }
+
+                                button {
+                                    font-size: 12px;
+                                    color: #a4adc8;
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 100%;
+                                    text-align: center;
+                                    animation: 3s linear;
+                                }
+
+                                button:hover {
+                                    background-color: $blue;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

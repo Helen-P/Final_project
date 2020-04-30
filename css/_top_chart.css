@@ -1,0 +1,36 @@
+.TOPchart {
+  margin-top: 60px; }
+  .TOPchart .second_block_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .TOPchart .second_block_title .nav_arrows {
+      font-size: 14px; }
+  .TOPchart .chart_container {
+    margin: 20px auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    justify-items: flex-start; }
+    .TOPchart .chart_container .album {
+      display: block; }
+      .TOPchart .chart_container .album .album_img {
+        overflow: hidden;
+        border-radius: 20px;
+        height: 20px;
+        width: 100%;
+        display: block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .TOPchart .chart_container .album .album_img img {
+          height: 100%;
+          width: auto;
+          text-align: center; }

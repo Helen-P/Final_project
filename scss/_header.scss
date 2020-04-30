@@ -1,0 +1,90 @@
+header {
+    color: $light_grey;
+
+    .input_search_music {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            outline: none;
+            background-color: transparent;
+            padding: 12px;
+            padding-left: 60px;
+            border: none;
+            display: flex;
+            border-radius: 100px;
+            border: 1px solid $blue_grey;
+            font-size: 0.7em;
+            width: 29rem;
+            opacity: 0.3;
+        }
+
+        label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-47%);
+            left: 22px;
+            opacity: 0.7;
+        }
+    }
+
+    .headers_icons {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            padding: 17px;
+            font-size: 20px;
+        }
+
+        .icon-ring {
+            position: relative;
+        }
+
+        .icon-ring::after {
+            position: absolute;
+            content: "";
+            top: 15px;
+            right: 16px;
+            height: 6px;
+            width: 6px;
+            border: 2px white solid;
+            border-radius: 50%;
+            background-color: $red;
+        }
+
+        .icon-ring:hover {            
+        transition: 0.2s;
+        box-shadow: 0 2px 5px 1px #e2e2e2c9;
+        
+        border-radius: 4px;
+        }
+    }
+
+    .button_upgrade {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .button_upgrade button {
+        color: white;
+        line-height: 0;
+        padding: 5px 20px;
+        min-width: 130px;
+        background: linear-gradient(to top left, #ff7c85, #ff001d);
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        outline: none;
+        word-break: break-all;
+        flex-wrap: wrap;
+    }
+
+    #Upgrade_app:hover {
+        transition: 0.2s;
+        box-shadow: 0 2px 5px 1px #ff7c85c9;
+    }
+}

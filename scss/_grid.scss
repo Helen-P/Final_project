@@ -1,0 +1,82 @@
+body {
+    display: grid;
+}
+
+.grid-container {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1.1fr 6fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    .menu_container {
+        .menu_burger {
+            display: none;
+            top: 20px;
+            left: 20px;
+
+            .line {
+                display: block;
+                z-index: 3;
+                width: 21px;
+                height: 2px;
+                margin: 4px;
+                background: black;
+                position: relative;
+            }
+        }
+        menu {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 4.8fr 4.3fr 9fr;
+        }
+    }
+
+    main {
+        padding-top: 20px;
+        padding-left: $padding_general;
+
+        header {
+            padding-right: $padding_general;
+            display: grid;
+            grid-template-columns: 7fr 0.3fr 0.8fr;
+            grid-area: header;
+            grid-template-rows: 0.1fr;
+        }
+
+        section .TOPchart {
+            display: grid;
+            grid-template-rows: 8fr;
+        }
+
+        section + .popular_and_playing {
+            display: grid;
+            grid-template-columns: 1fr 0.7fr;
+
+            .Most_popular {
+                display: grid;
+
+                .song_container {
+                    display: grid;
+                    grid-template-columns: 0.4fr 0.7fr 0.5fr 3fr 3fr 0.3fr 1fr;
+                    align-items: center;
+                }
+            }
+
+            .Now_Playing {
+                padding-left: $padding_general;
+                padding-right: $padding_general;
+                padding-bottom: $padding_general;
+
+                .player_container {
+                    display: grid;
+                    grid-template-columns: 0.7fr 1fr;
+                }
+            }
+        }
+    }
+}

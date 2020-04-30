@@ -1,0 +1,93 @@
+.TOPchart {
+    .second_block_title {
+        display: flex;
+        justify-content: space-between;
+        min-height: 25px;
+
+        .nav_arrows {
+            font-size: 14px;
+            padding-right: 40px;
+            width: 80px;
+            display: flex;
+            justify-content: space-between;
+
+            .arrow {
+                padding-left: 10px;
+                font-size: 14px;
+            }
+
+            button {
+                background: transparent;
+                border: none;
+                outline: none;
+                opacity: 0.7;
+                position: static;
+            }
+
+            button:hover {
+                opacity: 1;
+                transition: 0.2s;
+                font-weight: 800;
+                cursor: pointer;
+            }
+
+            button:active {
+                position: static;
+                border-radius: 20px;
+                min-width: 10px;
+                min-height: 10px;
+                box-sizing: border-box;
+                transition: 0.2s;
+                background-color: rgba(187, 187, 187, 0.493);
+            }
+        }
+    }
+
+    .chart_container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .chart_container {
+        display: inline-flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+
+        .album {
+            display: inline-block;
+            text-transform: capitalize;
+            display: block;
+            margin-right: 28px;
+            padding-bottom: 15px;
+
+            .album_img {
+                border-radius: 13px;
+                height: 230px;
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin: 20px auto;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                    display: block;
+                    text-align: center;
+                }
+
+                .album_title {
+                    padding-top: 50px;
+                }
+            }
+        }
+
+        .album:hover {
+            cursor: pointer;
+            transition: 0.2s;
+            background-color: white;
+            transform: scale(1.01);
+            box-shadow: 0 1px 10px 20px white;
+        }
+    }
+}

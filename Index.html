@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Main.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap">
+    <link rel="stylesheet" href="fonts/iconfonts/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+
+</head>
+
+<body>
+    <div class="wrapper grid-container">
+        <div class="menu_container">
+            <div class="menu_burger" id="menu_burger">
+                <div class="line l1"></div>
+                <div class="line l2"></div>
+                <div class="line l3"></div>
+            </div>
+            <menu id="menu">
+
+                <nav class="avatar">
+
+                    <div class="wrapper_img">
+                        <img src="https://images.aif.ru/013/568/674f8c2ce9d3b1701fd367d54915598a.jpg" alt="">
+                    </div>
+                    <div class="user_data">
+                        <div class="user_name">Farzan Faruk</div>
+                        <div class="user_mail">Farzan_901@gmail.com</div>
+                    </div>
+                </nav>
+
+                <nav class="main_menu menu_items">
+                    <ul>
+                        <li>
+                            <input type="radio" id="radio_Home" name="menu" checked>
+                            <a href="#"><label for="radio_Home"><span class="icon-home"></span>Home</label></a>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio_Browse" name="menu">
+                            <a href="#"><label for="radio_Browse"><span
+                                        class="icon-data-storage"></span>Browse</label></a>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio_Album" name="menu">
+                            <a href="#"><label for="radio_Album"><span class="icon-search"></span>Album</label></a>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio_Artists" name="menu">
+                            <a href="#"><label for="radio_Artists"><span class="icon-user"></span>Artists</label></a>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio_Videos" name="menu">
+                            <a href="#"><label for="radio_Videos"><span
+                                        class="icon-video-camera"></span>Videos</label></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="menu_my_music menu_items">
+                    <span class="title_menu">My music</span>
+                    <ul>
+                        <li>
+                            <input type="radio" id="radio_Recently" name="menu">
+                            <a href="#"><label for="radio_Recently"><span class="icon-clock"></span>Recently
+                                    played</label></a>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio_Files" name="menu">
+                            <a href="#"><label for="radio_Files"><span class="icon-file"></span>Local Files</label></a>
+                        </li>
+                    </ul>
+                </nav>
+            </menu>
+
+        </div>
+
+        <main>
+            <header>
+                <div class="input_search_music">
+
+                    <input type="text" id="search_music" placeholder="Search for song, artists etc...">
+                    <label for="search_music"><span class="icon-magnifying-glass"></span></label>
+                </div>
+
+                <div class="headers_icons">
+                    <span class="icon-settings"></span>
+                    <span class="icon-ring"></span>
+                </div>
+
+                <div class="button_upgrade">
+                    <button id="Upgrade_app">Upgrade plan</button>
+                </div>
+
+            </header>
+
+            <section>
+                <div class="TOPchart">
+                    <div class="title">
+                        <div class="first_block_title ">Billboard TOPchart</div>
+                        <div class="second_block_title ">
+                            <div id="Count_Albums"></div>
+                            <div class="nav_arrows">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="chart_container" id="chart_container">
+                    </ul>
+                </div>
+            </section>
+
+            <div class="popular_and_playing">
+
+                <section>
+                    <div class="Most_popular">
+                        <div class="title">
+                            <div class="first_block_title" id="name_album"></div>
+                            <div class="second_block_title" id="Count_Songs"></div>
+                        </div>
+
+                        <ul class="audio_container" id="audio_container">
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="Now_Playing" id="Now_Playing">
+                        <div class="title">
+                            <div class="first_block_title">Now Playing</div>
+                            <div class="second_block_title">Enjoy the record</div>
+                        </div>
+
+                        <div class="player_container">
+                            <div class="disk">
+                                <div class="disk_container">
+                                    <img id="own_img_audio"
+                                        src="https://www.liberaldictionary.com/wp-content/uploads/2019/01/background-9120.jpg"
+                                        alt="own_img_audio">
+                                </div>
+                                <div class="song_progress">
+                                    <div class="time_info">
+                                        <span class="count_time" id="count_time">00 : 00</span>
+                                        <span class="full_time_song" id="full_time_song">00 : 00</span>
+                                    </div>
+                                    <div class="progress_range">
+                                        <input type="range" class="progress_bar" id="progress_range_input" min="0"
+                                            max="0" value="0">
+                                        <audio id="audio" src="">
+                                            Your browser does not support the
+                                            <code>audio</code> element.
+                                        </audio>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="information">
+                                <span class="album_title" id="album_title_current">Blue neighbourhood</span>
+                                <span class="album_singer" id="album_singer_current">Troye Sivan</span>
+                                <div class="settings">
+                                    <button class="prev_song" id="prev_song">◄◄</button>
+                                    <button class="play_pause" id="play_pause">►</button>
+                                    <button class="next_song" id="next_song">►►</button>
+                                    <label for="volume" id="button_volume"><img src="images/volume.png" id="volume"
+                                            alt="">
+                                    </label>
+                                    <input type="range" min="0" max="10" value="5" name="volume"
+                                        id="volume_range_input">
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/Index.js"></script>
+
+</body>
+
+</html>

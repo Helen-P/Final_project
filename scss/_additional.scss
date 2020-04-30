@@ -1,0 +1,60 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(#fdfdfe, #f5f7fe);
+    font-size: 20px;
+    font-weight: 500;
+    overflow: hidden;
+    height: 100%;
+}
+
+.first_block_title {
+    margin-top: 2.3rem;
+    color: $dark_blue;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.second_block_title {
+    color: #a4adc8;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.album_title {
+    color: $dark_blue;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.album_singer {
+    color: #a4adc8;
+    font-size: .9rem;
+    font-weight: 300;
+    display: block;
+    line-height: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .first_block_title {
+        margin-top: 2rem;
+        color: $dark_blue;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    
+    .second_block_title {
+        font-size: .9rem;
+    }
+    
+    .album_title {
+        color: $dark_blue;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .album_singer {
+        font-size: .8rem;
+        font-weight: 300;
+        line-height: 1rem;
+    }
+}

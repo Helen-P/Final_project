@@ -1,0 +1,10 @@
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    -ms-grid-columns: 7.1fr;
+    grid-template-columns: 7.1fr; }
+    .grid-container menu {
+      background-color: brown;
+      display: fixed;
+      width: 85vw;
+      position: fixed;
+      z-index: 25; } }

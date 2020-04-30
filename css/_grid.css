@@ -1,0 +1,17 @@
+.grid {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 18vw 80vw;
+  grid-template-columns: 18vw 80vw;
+  -ms-grid-rows: 100vh;
+  grid-template-rows: 100vh; }
+  .grid header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70vw 20vw;
+    grid-template-columns: 70vw 20vw;
+    -ms-grid-row: 10;
+    grid-area: 10vw;
+    -ms-grid-rows: 10vh;
+    grid-template-rows: 10vh; }
